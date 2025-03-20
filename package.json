@@ -1,5 +1,5 @@
 {
-  "name": "@adminforth/google-oauth-adapter",
+  "name": "@adminforth/facebook-oauth-adapter",
   "version": "1.0.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,5 +12,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "adminforth": "^1.12.1",
+    "typescript": "^5.8.2"
+  }
 }
