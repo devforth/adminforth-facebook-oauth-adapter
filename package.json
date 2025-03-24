@@ -13,6 +13,10 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devforth/adminforth-facebook-oauth-adapter.git"
+  },
   "dependencies": {
     "adminforth": "^1.12.1",
     "typescript": "^5.8.2"
