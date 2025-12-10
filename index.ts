@@ -22,7 +22,7 @@ export default class AdminForthAdapterFacebookOauth2 implements OAuth2Adapter {
       return `https://www.facebook.com/v22.0/dialog/oauth?${params.toString()}`;
     }
   
-    async getTokenFromCode(code: string, redirect_uri: string): Promise<{ email: string; }> {
+    async getTokenFromCode(code: string, redirect_uri: string): Promise<{ email: string, fullName: string, profilePictureUrl?: string }> {
       // Exchange code for token
       const tokenResponse = await fetch('https://graph.facebook.com/v22.0/oauth/access_token', {
         method: 'POST',
@@ -56,6 +56,8 @@ export default class AdminForthAdapterFacebookOauth2 implements OAuth2Adapter {
   
       return {
         email: userData.email,
+        fullName: userData.name,
+        profilePictureUrl: userData.picture?.data?.url,
       };
     }
 
