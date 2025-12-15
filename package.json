@@ -18,7 +18,9 @@
     "url": "https://github.com/devforth/adminforth-facebook-oauth-adapter.git"
   },
   "dependencies": {
-    "adminforth": "^1.12.1",
     "typescript": "^5.8.2"
+  },
+  "peerDependencies": {
+    "adminforth": "^2.13.0-next.56"
   }
 }
